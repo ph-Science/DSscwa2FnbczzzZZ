@@ -1,0 +1,2685 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<base href="https://cdn.jsdelivr.net/gh/gn-math/gn-math.github.io@main/">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="icon" type="image/png" href="https://media.discordapp.net/attachments/1246719291517308929/1478561249032798268/New_Project_3.png?ex=69a8d8f8&is=69a78778&hm=abee371c7fede1116bf9773b6dcdd858b1c7c7ddb4b2425b7774a0381481756a&=&format=webp&quality=lossless&width=40&height=40">
+<link rel="apple-touch-icon" href="https://media.discordapp.net/attachments/1246719291517308929/1478561249032798268/New_Project_3.png?ex=69a8d8f8&is=69a78778&hm=abee371c7fede1116bf9773b6dcdd858b1c7c7ddb4b2425b7774a0381481756a&=&format=webp&quality=lossless&width=40&height=40">
+
+<title>PH - Science</title>
+<meta name="title" content="PH Science | Learn Biology the Easy Way">
+<meta name="description" content="Access 700+ science worksheets designed to help you master biology quickly and easily.">
+
+<script>
+window.addEventListener('beforeunload', function (event) {
+event.preventDefault();
+event.returnValue = '';
+return 'Any unsaved progress will be lost.';
+});
+</script>
+<script async src="https://fundingchoicesmessages.google.com/i/pub-5521219086088837?ers=1"></script>
+<script>(function() {function signalGooglefcPresent() {if (!window.frames['googlefcPresent']) {if (document.body) {const iframe = document.createElement('iframe'); iframe.style = 'width: 0; height: 0; border: none; z-index: -1000; left: -1000px; top: -1000px;'; iframe.style.display = 'none'; iframe.name = 'googlefcPresent'; document.body.appendChild(iframe);} else {setTimeout(signalGooglefcPresent, 0);}}}signalGooglefcPresent();})();</script>
+<script src="https://cdn.jsdelivr.net/gh/gn-math/gn-math.github.io@main/gnmath.js"></script>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700;800&display=swap');
+
+:root {
+  --orange: #ff6b00;
+  --orange-bright: #ff8c2e;
+  --orange-deep: #cc5500;
+  --orange-glow: 0 0 30px #ff6b00, 0 0 60px rgba(255,107,0,0.5);
+  
+  --bg-primary: #030405;
+  --bg-secondary: #0a0c0e;
+  --bg-panel: #111517;
+  --bg-card: #1a1e22;
+  --bg-elevated: #252b30;
+  --text-primary: #f0f2f4;
+  --text-secondary: #b0b8c0;
+  --text-muted: #7a8088;
+  --border-color: rgba(255,107,0,0.3);
+  --border-glow: rgba(255,107,0,0.7);
+  --card-shadow: 0 30px 50px -20px black;
+  --hover-shadow: 0 45px 80px -15px #ff6b00;
+  --toast-bg: var(--orange);
+  --toast-text: black;
+  --toast-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  
+  --radius-sm: 12px;
+  --radius-md: 20px;
+  --radius-lg: 32px;
+  --radius-xl: 48px;
+  --radius-full: 9999px;
+  --transition: 0.3s cubic-bezier(0.2, 0.9, 0.4, 1);
+  --transition-bounce: 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+  
+  --optimized-multiplier: 1;
+}
+
+body.light-theme {
+  --bg-primary: #f8fafc;
+  --bg-secondary: #f1f4f8;
+  --bg-panel: #ffffff;
+  --bg-card: #ffffff;
+  --bg-elevated: #f8fafc;
+  --text-primary: #1a1e24;
+  --text-secondary: #4a5058;
+  --text-muted: #7c828c;
+  --border-color: rgba(255,107,0,0.2);
+  --card-shadow: 0 20px 40px -15px rgba(0,0,0,0.1);
+  --hover-shadow: 0 35px 60px -15px #ff6b00;
+  --toast-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+body.optimized-mode {
+  --optimized-multiplier: 0.5;
+}
+
+body.optimized-mode * {
+  animation-duration: 0.001s !important;
+  animation-iteration-count: 1 !important;
+  transition-duration: 0.001s !important;
+}
+
+body.optimized-mode .hero-card::before,
+body.optimized-mode body::before,
+body.optimized-mode .hero-card,
+body.optimized-mode .stat-value {
+  animation: none !important;
+}
+
+body.optimized-mode .locked-overlay {
+  backdrop-filter: none !important;
+  background: rgba(0,0,0,0.95);
+}
+
+body.optimized-mode .vault,
+body.optimized-mode .zone-item {
+  backdrop-filter: none !important;
+}
+
+body.optimized-mode .zone-item:hover {
+  transform: translateY(-5px) scale(1.01);
+}
+
+body.optimized-mode .zone-item:hover img {
+  transform: scale(1.05);
+}
+
+body.optimized-mode .favorite-star:hover {
+  transform: scale(1.1);
+}
+
+body.optimized-mode .logo {
+  animation: none !important;
+}
+
+body.optimized-mode .hero h1 {
+  animation: none !important;
+}
+
+body.optimized-mode .toast::after {
+  animation-duration: 3s !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.001s !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001s !important;
+  }
+}
+
+img {
+  content-visibility: auto;
+}
+
+.zone-container {
+  content-visibility: auto;
+  contain-intrinsic-size: 300px;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  line-height: 1.5;
+  min-height: 100vh;
+  transition: background-color 0.3s, color 0.3s;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image: 
+    radial-gradient(circle at 20% 30%, rgba(255,107,0,0.12) 0%, transparent 40%),
+    radial-gradient(circle at 80% 70%, rgba(255,140,0,0.1) 0%, transparent 40%),
+    repeating-linear-gradient(45deg, rgba(255,107,0,0.02) 0px, rgba(255,107,0,0.02) 1px, transparent 1px, transparent 30px);
+  pointer-events: none;
+  z-index: -1;
+  animation: bgShift 20s infinite alternate ease-in-out;
+  will-change: transform;
+}
+
+@keyframes bgShift {
+  0% { transform: scale(1) rotate(0deg); opacity: 0.5; }
+  100% { transform: scale(1.08) rotate(0.5deg); opacity: 1; }
+}
+
+header {
+  position: sticky;
+  top: 20px;
+  z-index: 100;
+  max-width: 1600px;
+  margin: 0 auto 20px;
+  width: calc(100% - 40px);
+  background: rgba(17, 21, 23, 0.7);
+  backdrop-filter: blur(20px) saturate(200%);
+  -webkit-backdrop-filter: blur(20px) saturate(200%);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-full);
+  box-shadow: var(--card-shadow);
+  transition: var(--transition);
+  will-change: transform, border-color;
+}
+
+header:hover {
+  border-color: var(--border-glow);
+  box-shadow: 0 0 30px rgba(255,107,0,0.2);
+}
+
+.header-content {
+  padding: 0.8rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 2.5rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, #ff6b00, #ffa64d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: -0.03em;
+  animation: logoShimmer 3s infinite linear;
+  background-size: 200% auto;
+  will-change: background-position;
+}
+
+@keyframes logoShimmer {
+  0% { background-position: 0% center; }
+  100% { background-position: 200% center; }
+}
+
+.logo-badge {
+  background: rgba(255,107,0,0.2);
+  border: 1px solid rgba(255,107,0,0.5);
+  color: var(--orange-bright);
+  padding: 0.3rem 1.5rem;
+  border-radius: var(--radius-full);
+  font-weight: 800;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 1rem;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 20px rgba(255,107,0,0.2);
+}
+
+.search-container {
+  display: flex;
+  flex: 1 1 500px;
+  background: rgba(0,0,0,0.3);
+  border-radius: var(--radius-full);
+  border: 1px solid var(--border-color);
+  transition: all 0.3s ease;
+}
+
+.search-container:focus-within {
+  border-color: var(--orange);
+  box-shadow: 0 0 0 4px rgba(255,107,0,0.2), 0 0 20px rgba(255,107,0,0.3);
+  transform: scale(1.02);
+}
+
+#searchBar {
+  flex: 1;
+  background: transparent;
+  border: none;
+  padding: 1rem 2rem;
+  color: var(--text-primary);
+  font-size: 1rem;
+  outline: none;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+#searchBar::placeholder {
+  color: var(--text-muted);
+  transition: opacity 0.3s;
+}
+
+#searchBar:focus::placeholder {
+  opacity: 0.5;
+  transform: translateX(10px);
+}
+
+#sortOptions {
+  background: rgba(255,107,0,0.2);
+  border: none;
+  color: var(--text-primary);
+  padding: 0.6rem 3rem 0.6rem 2rem;
+  border-radius: var(--radius-full);
+  font-weight: 700;
+  cursor: pointer;
+  outline: none;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='22' height='22' viewBox='0 0 24 24' fill='none' stroke='%23ff6b00' stroke-width='2.5'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 1.5rem center;
+  border-left: 1px solid var(--border-color);
+  font-family: 'JetBrains Mono', monospace;
+  transition: all 0.3s ease;
+}
+
+#sortOptions:hover {
+  background-color: rgba(255,107,0,0.3);
+  transform: translateY(-2px);
+}
+
+.account-btn {
+  background: linear-gradient(135deg, var(--orange), var(--orange-bright));
+  border: none;
+  color: black;
+  font-weight: 800;
+  padding: 0.8rem 2rem;
+  border-radius: var(--radius-full);
+  cursor: pointer;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 1rem;
+  transition: var(--transition-bounce);
+  box-shadow: 0 4px 15px rgba(255,107,0,0.3);
+  white-space: nowrap;
+  position: relative;
+  overflow: hidden;
+}
+
+.account-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+  transition: left 0.5s ease;
+}
+
+.account-btn:hover::before {
+  left: 100%;
+}
+
+.account-btn:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 10px 30px rgba(255,107,0,0.5);
+}
+
+.settings-icon {
+  background: rgba(255,107,0,0.15);
+  border: 1px solid var(--border-color);
+  color: var(--orange);
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.settings-icon:hover {
+  background: var(--orange);
+  color: black;
+  transform: rotate(180deg) scale(1.1);
+}
+
+/* ACCOUNT MODAL - context-aware */
+.account-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.8);
+  backdrop-filter: blur(20px);
+  z-index: 10000;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.account-modal.active {
+  display: flex;
+  opacity: 1;
+}
+
+.modal-content {
+  max-width: 450px;
+  width: 90%;
+  background: var(--bg-panel);
+  border: 2px solid var(--border-glow);
+  border-radius: var(--radius-xl);
+  padding: 2.5rem;
+  box-shadow: 0 50px 100px -30px black, 0 0 100px rgba(255,107,0,0.3);
+  transform: scale(0.9);
+  transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.modal-content::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 30% 30%, rgba(255,107,0,0.15) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.account-modal.active .modal-content {
+  transform: scale(1);
+}
+
+.modal-content h2 {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  background: linear-gradient(135deg, #ff6b00, #ffa64d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+}
+
+.modal-content .user-greeting {
+  color: var(--orange-bright);
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  font-family: 'JetBrains Mono', monospace;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 1rem;
+}
+
+.modal-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 2rem 0 1rem;
+  position: relative;
+}
+
+.modal-btn {
+  padding: 1.2rem;
+  border-radius: var(--radius-full);
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 800;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: var(--transition-bounce);
+  border: none;
+  position: relative;
+  overflow: hidden;
+}
+
+.modal-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+  transition: left 0.5s ease;
+}
+
+.modal-btn:hover::before {
+  left: 100%;
+}
+
+.modal-btn.primary {
+  background: linear-gradient(135deg, var(--orange), var(--orange-bright));
+  color: black;
+  box-shadow: 0 4px 20px rgba(255,107,0,0.4);
+}
+
+.modal-btn.primary:hover {
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 10px 30px rgba(255,107,0,0.6);
+}
+
+.modal-btn.secondary {
+  background: rgba(255,107,0,0.1);
+  color: var(--text-primary);
+  border: 1px solid var(--border-color);
+}
+
+.modal-btn.secondary:hover {
+  background: rgba(255,107,0,0.2);
+  transform: translateY(-2px);
+}
+
+.modal-btn.warning {
+  background: rgba(255,60,60,0.2);
+  color: #ff8888;
+  border: 1px solid #ff5555;
+}
+
+.modal-btn.warning:hover {
+  background: rgba(255,60,60,0.3);
+  color: #ffaaaa;
+}
+
+.modal-link {
+  color: var(--orange);
+  text-decoration: none;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.9rem;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.modal-link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--orange);
+  transition: width 0.3s ease;
+}
+
+.modal-link:hover::after {
+  width: 100%;
+}
+
+.modal-link:hover {
+  transform: translateY(-2px);
+}
+
+.auth-input {
+  width: 100%;
+  padding: 1.2rem;
+  margin-bottom: 1rem;
+  background: rgba(0,0,0,0.3);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-full);
+  color: var(--text-primary);
+  font-family: 'JetBrains Mono', monospace;
+  transition: all 0.3s ease;
+}
+
+.auth-input:focus {
+  border-color: var(--orange);
+  box-shadow: 0 0 0 4px rgba(255,107,0,0.2);
+  outline: none;
+}
+
+.password-wrapper {
+  position: relative;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.password-wrapper input {
+  width: 100%;
+  padding: 1.2rem;
+  padding-right: 4rem;
+  background: rgba(0,0,0,0.3);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-full);
+  color: var(--text-primary);
+  font-family: 'JetBrains Mono', monospace;
+  transition: all 0.3s ease;
+}
+
+.password-wrapper input:focus {
+  border-color: var(--orange);
+  box-shadow: 0 0 0 4px rgba(255,107,0,0.2);
+  outline: none;
+}
+
+.password-toggle {
+  position: absolute;
+  right: 1.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: var(--orange);
+  font-size: 1rem;
+  cursor: pointer;
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 700;
+  padding: 0.2rem 0.5rem;
+  border-radius: var(--radius-sm);
+  transition: 0.2s;
+}
+
+.password-toggle:hover {
+  background: rgba(255,107,0,0.2);
+  transform: translateY(-50%) scale(1.1);
+}
+
+.settings-panel {
+  position: fixed;
+  top: 0;
+  right: -600px;
+  width: 500px;
+  height: 100vh;
+  background: var(--bg-panel);
+  backdrop-filter: blur(40px);
+  border-left: 2px solid var(--border-glow);
+  box-shadow: -30px 0 80px -20px black;
+  z-index: 1000;
+  transition: right 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+  padding: 2.5rem;
+  overflow-y: auto;
+}
+
+.settings-panel.active {
+  right: 0;
+}
+
+.settings-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 2px solid var(--border-color);
+}
+
+.settings-header h2 {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 2.5rem;
+  background: linear-gradient(135deg, #ff6b00, #ffa64d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#closeSettings {
+  background: none;
+  border: none;
+  color: var(--text-secondary);
+  font-size: 3rem;
+  cursor: pointer;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: 0.2s;
+}
+
+#closeSettings:hover {
+  background: rgba(255,107,0,0.2);
+  color: var(--orange);
+  transform: rotate(90deg);
+}
+
+.settings-section {
+  margin-bottom: 3rem;
+}
+
+.settings-section h3 {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--orange);
+}
+
+.setting-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 1.5rem;
+  background: rgba(0,0,0,0.2);
+  border-radius: var(--radius-full);
+  margin-bottom: 1rem;
+  border: 1px solid var(--border-color);
+  transition: all 0.3s ease;
+}
+
+.setting-item:hover {
+  background: rgba(255,107,0,0.1);
+  transform: translateX(5px);
+}
+
+.setting-item label {
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.toggle-switch {
+  width: 70px;
+  height: 34px;
+  background: rgba(0,0,0,0.4);
+  border-radius: 34px;
+  border: 1px solid var(--border-color);
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.toggle-switch::after {
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: white;
+  border-radius: 50%;
+  top: 1px;
+  left: 1px;
+  transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.toggle-switch.active {
+  background: var(--orange);
+}
+
+.toggle-switch.active::after {
+  left: 37px;
+  background: black;
+  transform: rotate(360deg);
+}
+
+.cloak-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.cloak-btn {
+  background: rgba(255,107,0,0.1);
+  border: 1px solid var(--border-color);
+  color: var(--text-primary);
+  padding: 0.8rem;
+  border-radius: var(--radius-full);
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 700;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.cloak-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,107,0,0.3), transparent);
+  transition: left 0.5s ease;
+}
+
+.cloak-btn:hover::before {
+  left: 100%;
+}
+
+.cloak-btn:hover {
+  background: var(--orange);
+  color: black;
+  transform: translateY(-2px) scale(1.05);
+  border-color: var(--orange);
+  box-shadow: 0 5px 15px rgba(255,107,0,0.4);
+}
+
+.cloak-custom {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.cloak-custom input {
+  flex: 1;
+  padding: 0.8rem 1.2rem;
+  background: rgba(0,0,0,0.2);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-full);
+  color: var(--text-primary);
+  font-family: 'JetBrains Mono', monospace;
+  transition: all 0.3s ease;
+}
+
+.cloak-custom input:focus {
+  border-color: var(--orange);
+  box-shadow: 0 0 0 4px rgba(255,107,0,0.2);
+  outline: none;
+}
+
+.hero {
+  max-width: 1600px;
+  margin: 2rem auto 3rem;
+  padding: 0 2rem;
+}
+
+.hero-card {
+  background: radial-gradient(ellipse at 20% 30%, rgba(255,107,0,0.3) 0%, transparent 70%),
+              radial-gradient(ellipse at 90% 70%, rgba(255,140,0,0.15) 0%, transparent 70%),
+              var(--bg-secondary);
+  backdrop-filter: blur(15px);
+  border-radius: var(--radius-xl);
+  padding: 4rem 6rem;
+  border: 1px solid var(--border-color);
+  box-shadow: var(--card-shadow);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+  position: relative;
+  overflow: hidden;
+  animation: heroPulse 4s infinite alternate ease-in-out;
+  will-change: box-shadow;
+}
+
+@keyframes heroPulse {
+  0% { box-shadow: var(--card-shadow); }
+  100% { box-shadow: 0 60px 120px -20px black, 0 0 80px rgba(255,107,0,0.3); }
+}
+
+.hero-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at var(--x, 30%) var(--y, 30%), rgba(255,107,0,0.4) 0%, transparent 60%);
+  opacity: 0.5;
+  pointer-events: none;
+  transition: opacity 0.3s;
+  will-change: opacity;
+}
+
+.hero-card:hover::before {
+  opacity: 0.8;
+}
+
+.hero h1 {
+  font-size: 5.5rem;
+  font-weight: 900;
+  background: linear-gradient(135deg, #ff6b00, #ffa64d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'JetBrains Mono', monospace;
+  line-height: 1;
+  animation: titleShimmer 4s infinite linear;
+  background-size: 200% auto;
+  will-change: background-position;
+}
+
+@keyframes titleShimmer {
+  0% { background-position: 0% center; }
+  100% { background-position: 200% center; }
+}
+
+.hero p {
+  color: var(--text-secondary);
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  border-left: 4px solid var(--orange);
+  padding-left: 2rem;
+  transition: all 0.3s ease;
+}
+
+.hero-card:hover p {
+  border-left-color: var(--orange-bright);
+  transform: translateX(5px);
+}
+
+.hero-stats {
+  display: flex;
+  gap: 4rem;
+  background: rgba(0,0,0,0.3);
+  padding: 2rem 4rem;
+  border-radius: var(--radius-full);
+  border: 1px solid var(--border-color);
+  backdrop-filter: blur(25px);
+  transition: all 0.3s ease;
+}
+
+.hero-card:hover .hero-stats {
+  background: rgba(255,107,0,0.1);
+  border-color: var(--orange);
+}
+
+.stat-value {
+  font-size: 4rem;
+  font-weight: 900;
+  color: var(--orange);
+  line-height: 1;
+  text-shadow: 0 0 30px currentColor;
+  font-family: 'JetBrains Mono', monospace;
+  animation: statPulse 2s infinite alternate ease-in-out;
+  will-change: text-shadow;
+}
+
+@keyframes statPulse {
+  0% { text-shadow: 0 0 30px rgba(255,107,0,0.5); }
+  100% { text-shadow: 0 0 50px rgba(255,107,0,0.8); }
+}
+
+.stat-label {
+  color: var(--text-muted);
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+main {
+  max-width: 1600px;
+  margin: 2rem auto;
+  padding: 0 2rem;
+}
+
+/* Lock filter toggle */
+.lock-filter {
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0 2rem;
+  gap: 1rem;
+}
+
+.lock-filter-btn {
+  background: rgba(255,107,0,0.1);
+  border: 1px solid var(--border-color);
+  color: var(--text-primary);
+  padding: 0.8rem 2rem;
+  border-radius: var(--radius-full);
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.lock-filter-btn.active {
+  background: var(--orange);
+  color: black;
+  border-color: var(--orange);
+  box-shadow: 0 0 20px rgba(255,107,0,0.5);
+}
+
+.lock-filter-btn:hover {
+  background: rgba(255,107,0,0.2);
+  transform: translateY(-2px);
+}
+
+.vault {
+  background: rgba(0,0,0,0.2);
+  backdrop-filter: blur(20px);
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--border-color);
+  margin-bottom: 2rem;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.vault:hover {
+  border-color: var(--orange);
+  box-shadow: 0 0 40px rgba(255,107,0,0.15);
+}
+
+.vault-header {
+  padding: 1.5rem 2rem;
+  font-weight: 900;
+  font-size: 2rem;
+  background: rgba(0,0,0,0.3);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'JetBrains Mono', monospace;
+  cursor: pointer;
+  user-select: none;
+  transition: all 0.3s ease;
+  border-bottom: 1px solid transparent;
+}
+
+.vault-header:hover {
+  background: rgba(255,107,0,0.15);
+  padding-left: 2.5rem;
+}
+
+.vault-header.active {
+  border-bottom-color: var(--border-color);
+}
+
+.vault-header span {
+  color: var(--orange);
+  background: rgba(255,107,0,0.2);
+  border: 1px solid rgba(255,107,0,0.4);
+  padding: 0.2rem 1.5rem;
+  border-radius: var(--radius-full);
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+}
+
+.vault-header:hover span {
+  background: rgba(255,107,0,0.3);
+  transform: scale(1.05);
+}
+
+.vault-header .toggle-icon {
+  color: var(--orange);
+  font-size: 2rem;
+  transition: transform 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+  margin-left: 1rem;
+}
+
+.vault-header.active .toggle-icon {
+  transform: rotate(180deg);
+}
+
+.vault-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  background: rgba(0,0,0,0.1);
+}
+
+.vault-content.expanded {
+  max-height: 1000000px;
+}
+
+.zone-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.empty-favorites, .empty-recent {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 4rem;
+  color: var(--text-muted);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 1.2rem;
+  border: 2px dashed var(--border-color);
+  border-radius: var(--radius-lg);
+  transition: all 0.3s ease;
+}
+
+.empty-favorites:hover, .empty-recent:hover {
+  border-color: var(--orange);
+  color: var(--text-secondary);
+}
+
+.zone-item {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  box-shadow: var(--card-shadow);
+  animation: cardAppear 0.5s ease-out;
+  animation-fill-mode: both;
+  will-change: transform, box-shadow;
+}
+
+@keyframes cardAppear {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.zone-item:hover {
+  transform: translateY(-15px) scale(1.03);
+  box-shadow: var(--hover-shadow);
+  border-color: var(--orange);
+}
+
+.zone-media {
+  position: relative;
+  aspect-ratio: 1/1;
+  overflow: hidden;
+}
+
+.zone-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+  will-change: transform;
+}
+
+.zone-item:hover img {
+  transform: scale(1.15);
+}
+
+.zone-overlay {
+  position: absolute;
+  top: 1.2rem;
+  right: 1.2rem;
+  background: var(--orange);
+  color: black;
+  font-weight: 900;
+  padding: 0.4rem 1.8rem;
+  border-radius: var(--radius-full);
+  opacity: 0;
+  transform: translateY(-10px) scale(0.9);
+  transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+  box-shadow: 0 0 30px var(--orange);
+  font-family: 'JetBrains Mono', monospace;
+  pointer-events: none;
+}
+
+.zone-item:hover .zone-overlay {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+/* LOCKED OVERLAY - enhanced */
+.locked-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.85);
+  backdrop-filter: blur(8px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 20;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+  border-radius: var(--radius-lg);
+}
+
+.zone-item.locked .locked-overlay {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.lock-icon {
+  font-size: 4rem;
+  filter: drop-shadow(0 0 20px var(--orange));
+  animation: lockPulse 2s infinite ease-in-out;
+  margin-bottom: 1rem;
+}
+
+@keyframes lockPulse {
+  0%, 100% { transform: scale(1); filter: drop-shadow(0 0 20px var(--orange)); }
+  50% { transform: scale(1.1); filter: drop-shadow(0 0 40px var(--orange)); }
+}
+
+.locked-message {
+  text-align: center;
+  padding: 0 2rem;
+}
+
+.locked-message p {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  text-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.locked-message .signup-prompt {
+  background: linear-gradient(135deg, var(--orange), var(--orange-bright));
+  color: black;
+  font-weight: 900;
+  padding: 0.8rem 2rem;
+  border-radius: var(--radius-full);
+  display: inline-block;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+  box-shadow: 0 0 20px rgba(255,107,0,0.5);
+}
+
+.locked-message .signup-prompt:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 30px rgba(255,107,0,0.8);
+}
+
+.zone-content {
+  padding: 1.2rem 1.2rem 0.8rem;
+  background: rgba(0,0,0,0.3);
+  border-top: 1px solid var(--border-color);
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 10;
+}
+
+.zone-item.locked .zone-content {
+  filter: blur(2px);
+  opacity: 0.7;
+}
+
+.zone-item.locked .zone-media img {
+  filter: blur(4px) brightness(0.5);
+}
+
+.zone-item.locked:hover {
+  transform: translateY(-5px) scale(1.01);
+}
+
+.zone-title-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.favorite-star {
+  font-size: 1.8rem;
+  color: rgba(255,215,0,0.5);
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+  text-shadow: 0 0 20px rgba(255,215,0,0.5);
+  flex-shrink: 0;
+  line-height: 1;
+  margin-right: 0.25rem;
+  position: relative;
+  z-index: 15;
+}
+
+.favorite-star.guest-disabled {
+  cursor: pointer;
+  opacity: 0.8;
+  filter: grayscale(0.3);
+  position: relative;
+}
+
+.favorite-star.guest-disabled:hover {
+  transform: scale(1.2) rotate(5deg);
+  color: rgba(255,215,0,0.9);
+}
+
+.favorite-star.guest-disabled:hover::after {
+  content: "⭐ Sign in to favorite";
+  position: absolute;
+  bottom: 150%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--orange);
+  color: black;
+  padding: 0.8rem 1.5rem;
+  border-radius: var(--radius-full);
+  font-size: 0.9rem;
+  font-weight: 700;
+  white-space: nowrap;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+  border: 1px solid rgba(255,255,255,0.2);
+  z-index: 100;
+  pointer-events: none;
+  font-family: 'JetBrains Mono', monospace;
+  animation: tooltipFade 0.2s ease;
+}
+
+.favorite-star.guest-disabled:hover::before {
+  content: '';
+  position: absolute;
+  bottom: 130%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 8px solid var(--orange);
+  z-index: 100;
+}
+
+@keyframes tooltipFade {
+  from {
+    opacity: 0;
+    transform: translateX(-50%) translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+}
+
+.favorite-star:hover {
+  transform: scale(1.2) rotate(5deg);
+  color: rgba(255,215,0,0.8);
+}
+
+.favorite-star.active {
+  color: gold;
+  text-shadow: 0 0 30px gold;
+  animation: starPulse 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+@keyframes starPulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.4) rotate(10deg); }
+  100% { transform: scale(1) rotate(0); }
+}
+
+.zone-name {
+  font-weight: 900;
+  font-size: 1.3rem;
+  color: var(--text-primary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-family: 'JetBrains Mono', monospace;
+  flex: 1;
+}
+
+.zone-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  margin-top: 0.5rem;
+  padding-left: 2.3rem;
+}
+
+.zone-author {
+  color: var(--orange-bright);
+  font-weight: 700;
+  font-family: 'JetBrains Mono', monospace;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.zone-author:hover {
+  color: var(--orange);
+  text-decoration: underline;
+}
+
+.zone-item button {
+  background: transparent;
+  border: 2px solid rgba(255,107,0,0.3);
+  margin: 0.5rem 1.2rem 1.5rem;
+  padding: 0.9rem;
+  border-radius: var(--radius-full);
+  font-weight: 800;
+  font-size: 1rem;
+  color: var(--text-primary);
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+  text-transform: uppercase;
+  font-family: 'JetBrains Mono', monospace;
+  position: relative;
+  overflow: hidden;
+  z-index: 15;
+}
+
+.zone-item.locked button {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.zone-item button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,107,0,0.3), transparent);
+  transition: left 0.5s ease;
+}
+
+.zone-item button:hover::before {
+  left: 100%;
+}
+
+.zone-item button:hover {
+  background: var(--orange);
+  border-color: var(--orange);
+  color: black;
+  transform: scale(1.05);
+  box-shadow: 0 0 30px rgba(255,107,0,0.5);
+}
+
+#zoneViewer {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.99);
+  backdrop-filter: blur(50px);
+  z-index: 1000;
+  display: none;
+  flex-direction: column;
+  animation: viewerAppear 0.3s ease-out;
+}
+
+@keyframes viewerAppear {
+  from {
+    opacity: 0;
+    transform: scale(1.05);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.zone-viewer-header {
+  background: rgba(5,7,10,0.95);
+  backdrop-filter: blur(30px);
+  border-bottom: 2px solid var(--orange);
+  padding: 1.2rem 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#zoneName {
+  font-size: 3rem;
+  font-weight: 900;
+  background: linear-gradient(135deg, #fff, #ffb87c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+#zoneAuthor {
+  color: #a0a8b0;
+  font-size: 1.4rem;
+  border-left: 2px solid var(--orange);
+  padding-left: 2.5rem;
+  font-family: 'JetBrains Mono', monospace;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+#zoneAuthor:hover {
+  color: var(--orange);
+}
+
+.zone-controls button {
+  background: rgba(255,107,0,0.2);
+  border: 1px solid rgba(255,107,0,0.4);
+  padding: 0.9rem 2.5rem;
+  border-radius: var(--radius-full);
+  font-weight: 700;
+  color: white;
+  cursor: pointer;
+  font-family: 'JetBrains Mono', monospace;
+  transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.zone-controls button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+  transition: left 0.5s ease;
+}
+
+.zone-controls button:hover::before {
+  left: 100%;
+}
+
+.zone-controls button:hover {
+  background: var(--orange);
+  color: black;
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 0 30px rgba(255,107,0,0.5);
+}
+
+.zone-controls button.guest-disabled {
+  opacity: 0.6;
+  filter: grayscale(0.5);
+  pointer-events: auto;
+  cursor: pointer;
+  position: relative;
+}
+
+.zone-controls button.guest-disabled:hover {
+  background: rgba(255,107,0,0.2);
+  color: white;
+  transform: translateY(-2px);
+}
+
+.zone-controls button.guest-disabled:hover::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: 120%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--orange);
+  color: black;
+  padding: 0.8rem 1.5rem;
+  border-radius: var(--radius-full);
+  font-size: 0.9rem;
+  font-weight: 700;
+  white-space: nowrap;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+  border: 1px solid rgba(255,255,255,0.2);
+  z-index: 1000;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.zone-controls button.guest-disabled:hover::before {
+  content: '';
+  position: absolute;
+  bottom: 110%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 8px solid var(--orange);
+  z-index: 1000;
+}
+
+#zoneFrame {
+  flex: 1;
+  width: 100%;
+  border: 0;
+  background: white;
+}
+
+.toast-container {
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  z-index: 99999;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  pointer-events: none;
+  max-width: 400px;
+  width: calc(100% - 4rem);
+}
+
+.toast {
+  background: var(--orange);
+  padding: 1rem 1.5rem;
+  border-radius: var(--radius-full);
+  color: black;
+  font-weight: 700;
+  box-shadow: var(--toast-shadow), 0 0 20px rgba(255,107,0,0.5);
+  font-family: 'JetBrains Mono', monospace;
+  animation: toastSlideIn 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+  pointer-events: auto;
+  border: 1px solid rgba(255,255,255,0.3);
+  transform-origin: right;
+  position: relative;
+  overflow: hidden;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+}
+
+.toast::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  width: 100%;
+  background: rgba(0,0,0,0.2);
+  animation: toastProgress 3s linear forwards;
+  transform-origin: left;
+}
+
+@keyframes toastProgress {
+  0% { transform: scaleX(1); }
+  100% { transform: scaleX(0); }
+}
+
+@keyframes toastSlideIn {
+  0% { 
+    transform: translateX(100%) scale(0.8);
+    opacity: 0;
+  }
+  100% { 
+    transform: translateX(0) scale(1);
+    opacity: 1;
+  }
+}
+
+.toast.exit {
+  animation: toastSlideOut 0.3s ease-in forwards;
+}
+
+@keyframes toastSlideOut {
+  0% { 
+    transform: translateX(0) scale(1);
+    opacity: 1;
+  }
+  100% { 
+    transform: translateX(100%) scale(0.8);
+    opacity: 0;
+  }
+}
+
+footer {
+  margin-top: 7rem;
+  padding: 4rem 2rem;
+  background: rgba(0,0,0,0.7);
+  backdrop-filter: blur(25px);
+  border-top: 1px solid var(--border-color);
+}
+
+.footer-content {
+  max-width: 1600px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+}
+
+.footer-links {
+  display: flex;
+  gap: 3rem;
+}
+
+.footer-links a {
+  color: var(--text-muted);
+  text-decoration: none;
+  font-weight: 700;
+  padding: 0.6rem 1.2rem;
+  border-radius: var(--radius-full);
+  border: 1px solid transparent;
+  font-family: 'JetBrains Mono', monospace;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.footer-links a::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,107,0,0.2), transparent);
+  transition: left 0.5s ease;
+}
+
+.footer-links a:hover::before {
+  left: 100%;
+}
+
+.footer-links a:hover {
+  color: var(--text-primary);
+  background: rgba(255,107,0,0.2);
+  border-color: var(--orange);
+  transform: translateY(-3px);
+}
+
+@media (max-width: 900px) {
+  .hero h1 { font-size: 3.5rem; }
+  .hero-stats { padding: 1.5rem; gap: 2rem; }
+  .stat-value { font-size: 2.5rem; }
+  .settings-panel { width: 100%; right: -100%; }
+  .toast-container { 
+    top: 1rem; 
+    right: 1rem; 
+    left: 1rem;
+    width: auto;
+  }
+  .zone-container {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    padding: 1.5rem;
+  }
+  .zone-viewer-header {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+  }
+  #zoneName { font-size: 2rem; }
+  .zone-controls { flex-wrap: wrap; justify-content: center; }
+  .zone-meta {
+    padding-left: 0;
+  }
+}
+</style>
+</head>
+<body>
+
+<!-- MAIN ACCOUNT MODAL (smart context) -->
+<div class="account-modal" id="accountModal">
+  <div class="modal-content" id="accountModalContent">
+    <!-- dynamic content injected by JS -->
+  </div>
+</div>
+
+<!-- LOGIN MODAL -->
+<div class="account-modal" id="loginModal">
+  <div class="modal-content">
+    <h2>welcome back</h2>
+    <p>sign in to your account</p>
+    
+    <input type="text" id="loginUsername" class="auth-input" placeholder="username">
+    
+    <div class="password-wrapper">
+      <input type="password" id="loginPassword" placeholder="password">
+      <button class="password-toggle" onclick="togglePassword('loginPassword', this)">show</button>
+    </div>
+    
+    <div class="modal-buttons">
+      <button class="modal-btn primary" onclick="login()">sign in</button>
+      <button class="modal-btn secondary" onclick="backToMain()">back</button>
+    </div>
+  </div>
+</div>
+
+<!-- SIGNUP MODAL -->
+<div class="account-modal" id="signupModal">
+  <div class="modal-content">
+    <h2>create account</h2>
+    <p>start saving your favorites</p>
+    
+    <input type="text" id="signupUsername" class="auth-input" placeholder="username">
+    
+    <div class="password-wrapper">
+      <input type="password" id="signupPassword" placeholder="password (min 6 chars)">
+      <button class="password-toggle" onclick="togglePassword('signupPassword', this)">show</button>
+    </div>
+    
+    <div class="modal-buttons">
+      <button class="modal-btn primary" onclick="register()">create</button>
+      <button class="modal-btn secondary" onclick="backToMain()">back</button>
+    </div>
+  </div>
+</div>
+
+<div class="settings-panel" id="settingsPanel">
+  <div class="settings-header">
+    <h2>settings</h2>
+    <button id="closeSettings">✕</button>
+  </div>
+  
+  <div class="settings-section">
+    <h3>appearance</h3>
+    <div class="setting-item">
+      <label>dark / light mode</label>
+      <div class="toggle-switch" id="themeToggle" onclick="toggleTheme()"></div>
+    </div>
+  </div>
+
+  <div class="settings-section">
+    <h3>favorites</h3>
+    <div class="setting-item">
+      <label>show favorites only</label>
+      <input type="checkbox" id="showFavOnly" onchange="filterFavorites()" style="width:20px; height:20px;">
+    </div>
+  </div>
+
+  <div class="settings-section">
+    <h3>recently played</h3>
+    <div class="setting-item">
+      <label>clear history</label>
+      <button class="cloak-btn" onclick="clearRecentHistory()" style="padding:0.4rem 1rem;">clear</button>
+    </div>
+    <div class="setting-item">
+      <label>max recent games</label>
+      <select id="maxRecent" onchange="updateMaxRecent()" style="background:rgba(255,107,0,0.2); border:1px solid var(--border-color); color:var(--text-primary); padding:0.4rem 1rem; border-radius:var(--radius-full);">
+        <option value="5">5 games</option>
+        <option value="10" selected>10 games</option>
+        <option value="20">20 games</option>
+        <option value="50">50 games</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="settings-section">
+    <h3>performance</h3>
+    <div class="setting-item">
+      <label>⚡ optimized mode (for low-end devices)</label>
+      <div class="toggle-switch" id="optimizedToggle" onclick="toggleOptimized()"></div>
+    </div>
+    <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 0.5rem; padding: 0 1rem;">
+      Disables animations and effects for smoother performance on slower devices.
+    </p>
+  </div>
+
+  <div class="settings-section">
+    <h3>tab cloak</h3>
+    <div class="cloak-grid">
+      <button class="cloak-btn" onclick="cloakPreset('Google Docs', 'https://ssl.gstatic.com/docs/documents/images/kix-favicon7.ico')">Docs</button>
+      <button class="cloak-btn" onclick="cloakPreset('Google Classroom', 'https://ssl.gstatic.com/classroom/favicon.png')">Classroom</button>
+      <button class="cloak-btn" onclick="cloakPreset('Google Slides', 'https://ssl.gstatic.com/docs/presentations/images/favicon5.ico')">Slides</button>
+      <button class="cloak-btn" onclick="cloakPreset('Google', 'https://www.google.com/favicon.ico')">Google</button>
+      <button class="cloak-btn" onclick="cloakPreset('GMetrix', 'https://www.gmetrix.com/favicon.ico')">GMetrix</button>
+      <button class="cloak-btn" onclick="cloakPreset('Clever', 'https://clever.com/favicon.ico')">Clever</button>
+      <button class="cloak-btn" onclick="cloakPreset('Summit K12', 'https://www.summitk12.com/favicon.ico')">Summit</button>
+      <button class="cloak-btn" onclick="cloakPreset('Khan Academy', 'https://cdn.kastatic.org/images/favicon.ico')">Khan</button>
+      <button class="cloak-btn" onclick="cloakPreset('Canvas', 'https://du11hjcvx0uqb.cloudfront.net/dist/images/favicon-e10d657a73.ico')">Canvas</button>
+    </div>
+    <div class="cloak-custom">
+      <input type="text" id="customTitle" placeholder="custom title">
+      <input type="text" id="customIcon" placeholder="icon URL">
+      <button class="cloak-btn" onclick="applyCustomCloak()">apply</button>
+    </div>
+  </div>
+</div>
+
+<header>
+  <div class="header-content">
+    <div style="display:flex; align-items:center; gap:1.2rem;">
+      <span class="logo">PH·SCIENCE</span>
+      <span class="logo-badge">700+</span>
+    </div>
+    <div class="search-container">
+      <input type="text" id="searchBar" placeholder="search 700+ games..." oninput="filterZones()">
+      <select id="sortOptions" onchange="sortZones()">
+        <option value="name">by name</option>
+        <option value="id">by date</option>
+        <option value="popular">by popularity</option>
+      </select>
+    </div>
+    <div style="display:flex; gap:1rem;">
+      <button class="account-btn" id="accountBtn" onclick="showSmartAccountModal()">✨ sign in</button>
+      <div class="settings-icon" id="settingsBtn">⚙️</div>
+    </div>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="hero-card" id="heroCard">
+    <div>
+      <h1>PH·SCIENCE</h1>
+      <p>more games coming soon.</p>
+    </div>
+    <div class="hero-stats">
+      <div class="stat-item">
+        <div class="stat-value" id="totalGamesStat">700+</div>
+        <div class="stat-label">GAMES</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<main>
+  <!-- Lock filter toggle (only visible for guests) -->
+  <div id="lockFilterContainer" style="display: none;" class="lock-filter">
+    <button id="showUnlockedBtn" class="lock-filter-btn active" onclick="setLockFilter('unlocked')">🔓 Unlocked (50%)</button>
+    <button id="showLockedBtn" class="lock-filter-btn" onclick="setLockFilter('locked')">🔒 Locked (50%)</button>
+  </div>
+
+  <!-- FAVORITES VAULT -->
+  <div class="vault" id="favoritesVault">
+    <div class="vault-header" onclick="toggleVault('favoritesVault')">
+      <div style="display: flex; align-items: center; gap: 1rem;">
+        <span>⭐ your favorites</span>
+        <span id="favoritesCount">0</span>
+      </div>
+      <span class="toggle-icon" id="favoritesVaultIcon">▼</span>
+    </div>
+    <div class="vault-content expanded" id="favoritesVaultContent">
+      <div id="favoritesZones" class="zone-container">
+        <div class="empty-favorites">✨ sign in to star games and see them here</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- RECENTLY PLAYED VAULT -->
+  <div class="vault" id="recentVault">
+    <div class="vault-header" onclick="toggleVault('recentVault')">
+      <div style="display: flex; align-items: center; gap: 1rem;">
+        <span>🕒 recently played</span>
+        <span id="recentCount">0</span>
+      </div>
+      <span class="toggle-icon" id="recentVaultIcon">▼</span>
+    </div>
+    <div class="vault-content expanded" id="recentVaultContent">
+      <div id="recentZones" class="zone-container">
+        <div class="empty-recent">🎮 play some games to see them here</div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- ALL ZONES VAULT -->
+  <div class="vault" id="allZonesVault">
+    <div class="vault-header" onclick="toggleVault('allZonesVault')">
+      <div style="display: flex; align-items: center; gap: 1rem;">
+        <span>📦 all zones · 700+ games</span>
+        <span id="allCount">0</span>
+      </div>
+      <span class="toggle-icon" id="allZonesVaultIcon">▼</span>
+    </div>
+    <div class="vault-content expanded" id="allZonesVaultContent">
+      <div id="container" class="zone-container">loading...</div>
+    </div>
+  </div>
+</main>
+
+<div id="zoneViewer">
+  <div class="zone-viewer-header">
+    <div>
+      <span id="zoneName">zone</span>
+      <a id="zoneAuthor" href="#" target="_blank" style="margin-left:2rem;">by author</a>
+    </div>
+    <div class="zone-controls">
+      <button id="fullscreenBtn" onclick="handleFullscreen()">fullscreen</button>
+      <button onclick="aboutBlank()">new tab</button>
+      <button id="downloadBtn" onclick="handleDownload()">download</button>
+      <button onclick="closeZone()">close</button>
+    </div>
+  </div>
+  <iframe id="zoneFrame"></iframe>
+</div>
+
+<div class="toast-container" id="toastContainer"></div>
+<script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-database-compat.js"></script>
+
+<script>
+//===================================================
+// FIREBASE & GLOBAL
+//===================================================
+const firebaseConfig = {
+  apiKey: "AIzaSyA-68XKNt_PD0I1TJbNcyotT4qMbgHh-tI",
+  authDomain: "ph-science.firebaseapp.com",
+  projectId: "ph-science",
+  storageBucket: "ph-science.firebasestorage.app",
+  messagingSenderId: "883067098385",
+  appId: "1:883067098385:web:036ccc248ffa4f44cf28b0",
+  measurementId: "G-54XJK643G2"
+};
+
+firebase.initializeApp(firebaseConfig);
+const auth = firebase.auth();
+const database = firebase.database();
+
+let zones = [];
+let favorites = [];
+let recentlyPlayed = [];
+let showFavOnly = false;
+let currentUser = null;
+let isGuest = false;
+let unlockedGames = []; // for guest mode (50% random)
+let lockFilter = 'unlocked'; // 'unlocked' or 'locked' (for guests)
+
+const bannedIds = [-1, 596];
+const coverURL = "https://cdn.jsdelivr.net/gh/gn-math/covers@main";
+const htmlURL = "https://cdn.jsdelivr.net/gh/gn-math/html@main";
+
+//===================================================
+// SMART ACCOUNT MODAL (context-aware)
+//===================================================
+window.showSmartAccountModal = function() {
+  const modal = document.getElementById('accountModal');
+  const content = document.getElementById('accountModalContent');
+  const user = auth.currentUser;
+  
+  if (user && !user.isAnonymous) {
+    // Signed-in user (non-guest)
+    content.innerHTML = `
+      <h2>PH·SCIENCE</h2>
+      <div class="user-greeting">👋 ${user.displayName || 'player'}</div>
+      <div class="modal-buttons">
+        <button class="modal-btn warning" onclick="logout()">🚪 log out</button>
+        <button class="modal-btn secondary" onclick="switchAccounts()">🔄 switch accounts</button>
+      </div>
+    `;
+  } else if (user && user.isAnonymous) {
+    // Guest
+    content.innerHTML = `
+      <h2>PH·SCIENCE</h2>
+      <div class="user-greeting">👤 guest mode · 50% unlocked</div>
+      <div class="modal-buttons">
+        <button class="modal-btn warning" onclick="logout()">🚪 log out</button>
+      </div>
+    `;
+  } else {
+    // Not logged in
+    content.innerHTML = `
+      <h2>PH·SCIENCE</h2>
+      <p>join the vault · 700+ games</p>
+      <div class="modal-buttons">
+        <button class="modal-btn primary" onclick="showSignup()">create account</button>
+        <button class="modal-btn secondary" onclick="continueAsGuest()">continue as guest</button>
+      </div>
+      <a class="modal-link" onclick="showLogin()">already have an account? sign in</a>
+    `;
+  }
+  
+  modal.style.display = 'flex';
+  setTimeout(() => modal.classList.add('active'), 10);
+};
+
+window.switchAccounts = function() {
+  auth.signOut().then(() => {
+    closeAllModals();
+    setTimeout(() => showSmartAccountModal(), 300);
+  });
+};
+
+window.logout = function() {
+  auth.signOut().then(() => {
+    showToast('👋 logged out');
+    closeAllModals();
+    document.getElementById('accountBtn').innerHTML = '✨ sign in';
+    favorites = [];
+    recentlyPlayed = [];
+    isGuest = false;
+    updateLockFilterVisibility();
+    displayZones(zones);
+    displayFavorites();
+    displayRecentlyPlayed();
+    updateViewerButtons();
+  });
+};
+
+//===================================================
+// LOCK FILTER LOGIC
+//===================================================
+function updateLockFilterVisibility() {
+  const container = document.getElementById('lockFilterContainer');
+  const user = auth.currentUser;
+  
+  if (user && user.isAnonymous) {
+    container.style.display = 'flex'; // guest sees filter
+    // Reset to unlocked view by default
+    setLockFilter('unlocked');
+  } else {
+    container.style.display = 'none'; // signed-in or logged-out don't see filter
+  }
+}
+
+window.setLockFilter = function(filter) {
+  lockFilter = filter;
+  document.getElementById('showUnlockedBtn').classList.toggle('active', filter === 'unlocked');
+  document.getElementById('showLockedBtn').classList.toggle('active', filter === 'locked');
+  displayZones(zones); // re-render with filter
+};
+
+//===================================================
+// OPTIMIZED MODE
+//===================================================
+window.toggleOptimized = function() {
+  document.body.classList.toggle('optimized-mode');
+  const toggle = document.getElementById('optimizedToggle');
+  toggle.classList.toggle('active');
+  localStorage.setItem('ph_optimized', document.body.classList.contains('optimized-mode') ? 'on' : 'off');
+  showToast(document.body.classList.contains('optimized-mode') ? '⚡ Optimized mode enabled' : '✨ Optimized mode disabled');
+};
+
+if (localStorage.getItem('ph_optimized') === 'on') {
+  document.body.classList.add('optimized-mode');
+  document.getElementById('optimizedToggle').classList.add('active');
+}
+
+if (!localStorage.getItem('ph_optimized')) {
+  const isLowEnd = navigator.hardwareConcurrency <= 2 || /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+  if (isLowEnd) {
+    document.body.classList.add('optimized-mode');
+    document.getElementById('optimizedToggle').classList.add('active');
+    localStorage.setItem('ph_optimized', 'on');
+  }
+}
+
+//===================================================
+// VAULT TOGGLE & UTILS
+//===================================================
+window.toggleVault = function(vaultId) {
+  const content = document.getElementById(vaultId + 'Content');
+  const icon = document.getElementById(vaultId + 'Icon');
+  const header = document.querySelector(`#${vaultId} .vault-header`);
+  
+  if (content.classList.contains('expanded')) {
+    content.classList.remove('expanded');
+    icon.style.transform = 'rotate(0deg)';
+    header.classList.remove('active');
+  } else {
+    content.classList.add('expanded');
+    icon.style.transform = 'rotate(180deg)';
+    header.classList.add('active');
+  }
+};
+
+window.togglePassword = function(inputId, button) {
+  const input = document.getElementById(inputId);
+  if (input.type === 'password') {
+    input.type = 'text';
+    button.textContent = 'hide';
+  } else {
+    input.type = 'password';
+    button.textContent = 'show';
+  }
+};
+
+function debounce(func, wait) {
+  let timeout;
+  return function(...args) {
+    clearTimeout(timeout);
+    timeout = setTimeout(() => func(...args), wait);
+  };
+}
+
+function showToast(message, duration = 3000) {
+  const container = document.getElementById('toastContainer');
+  const toast = document.createElement('div');
+  toast.className = 'toast';
+  toast.textContent = message;
+  container.appendChild(toast);
+  
+  setTimeout(() => {
+    toast.classList.add('exit');
+    setTimeout(() => {
+      if (toast.parentNode) toast.remove();
+    }, 300);
+  }, duration);
+}
+
+window.showLogin = function() {
+  document.getElementById('accountModal').classList.remove('active');
+  setTimeout(() => {
+    document.getElementById('accountModal').style.display = 'none';
+    const modal = document.getElementById('loginModal');
+    modal.style.display = 'flex';
+    setTimeout(() => modal.classList.add('active'), 10);
+  }, 300);
+};
+
+window.showSignup = function() {
+  document.getElementById('accountModal').classList.remove('active');
+  setTimeout(() => {
+    document.getElementById('accountModal').style.display = 'none';
+    const modal = document.getElementById('signupModal');
+    modal.style.display = 'flex';
+    setTimeout(() => modal.classList.add('active'), 10);
+  }, 300);
+};
+
+window.backToMain = function() {
+  document.getElementById('loginModal').classList.remove('active');
+  document.getElementById('signupModal').classList.remove('active');
+  setTimeout(() => {
+    document.getElementById('loginModal').style.display = 'none';
+    document.getElementById('signupModal').style.display = 'none';
+    showSmartAccountModal();
+  }, 300);
+};
+
+window.closeAllModals = function() {
+  document.querySelectorAll('.account-modal').forEach(m => {
+    m.classList.remove('active');
+    setTimeout(() => m.style.display = 'none', 300);
+  });
+};
+
+window.register = function() {
+  const username = document.getElementById('signupUsername').value.trim();
+  const password = document.getElementById('signupPassword').value.trim();
+  
+  if (!username || !password) { showToast('❌ enter username and password'); return; }
+  if (password.length < 6) { showToast('❌ password must be at least 6 characters'); return; }
+  
+  const email = username.toLowerCase().replace(/[^a-z0-9]/g, '') + '@ph.user';
+  
+  auth.createUserWithEmailAndPassword(email, password)
+    .then((userCredential) => {
+      const user = userCredential.user;
+      return user.updateProfile({ displayName: username }).then(() => {
+        return Promise.all([
+          database.ref('users/' + user.uid + '/favorites').set([]),
+          database.ref('users/' + user.uid + '/recent').set([])
+        ]);
+      });
+    })
+    .then(() => {
+      showToast(`✅ welcome, ${username}!`);
+      closeAllModals();
+    })
+    .catch((error) => {
+      if (error.code === 'auth/email-already-in-use') showToast('❌ username already exists');
+      else if (error.code === 'auth/weak-password') showToast('❌ password too weak');
+      else showToast('❌ signup failed');
+    });
+};
+
+window.login = function() {
+  const username = document.getElementById('loginUsername').value.trim();
+  const password = document.getElementById('loginPassword').value.trim();
+  
+  if (!username || !password) { showToast('❌ enter username and password'); return; }
+  
+  const email = username.toLowerCase().replace(/[^a-z0-9]/g, '') + '@ph.user';
+  
+  auth.signInWithEmailAndPassword(email, password)
+    .then(() => {
+      showToast(`👋 welcome back, ${username}`);
+      closeAllModals();
+    })
+    .catch((error) => {
+      showToast('❌ invalid username or password');
+    });
+};
+
+window.continueAsGuest = function() {
+  auth.signInAnonymously()
+    .then(() => {
+      showToast('👤 continuing as guest · 50% unlocked');
+      closeAllModals();
+    })
+    .catch((error) => {
+      showToast('❌ guest login failed');
+    });
+};
+
+function updateViewerButtons() {
+  const fullscreenBtn = document.getElementById('fullscreenBtn');
+  const downloadBtn = document.getElementById('downloadBtn');
+  const isSignedIn = auth.currentUser && !auth.currentUser.isAnonymous;
+  
+  if (fullscreenBtn && downloadBtn) {
+    if (!isSignedIn) {
+      fullscreenBtn.classList.add('guest-disabled');
+      fullscreenBtn.setAttribute('data-tooltip', '🔒 Sign in to use fullscreen');
+      downloadBtn.classList.add('guest-disabled');
+      downloadBtn.setAttribute('data-tooltip', '🔒 Sign in to download games');
+    } else {
+      fullscreenBtn.classList.remove('guest-disabled');
+      fullscreenBtn.removeAttribute('data-tooltip');
+      downloadBtn.classList.remove('guest-disabled');
+      downloadBtn.removeAttribute('data-tooltip');
+    }
+  }
+}
+
+window.handleFullscreen = function() {
+  const isSignedIn = auth.currentUser && !auth.currentUser.isAnonymous;
+  if (!isSignedIn) {
+    showToast('🔒 Sign in to use fullscreen');
+    showSmartAccountModal();
+    return;
+  }
+  const iframe = document.getElementById('zoneFrame');
+  if (iframe?.requestFullscreen) iframe.requestFullscreen();
+};
+
+window.handleDownload = function() {
+  const isSignedIn = auth.currentUser && !auth.currentUser.isAnonymous;
+  if (!isSignedIn) {
+    showToast('🔒 Sign in to download games');
+    showSmartAccountModal();
+    return;
+  }
+  const frame = document.getElementById('zoneFrame');
+  const blob = new Blob([frame.srcdoc], { type: "text/html" });
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = "game.html";
+  a.click();
+};
+
+auth.onAuthStateChanged((user) => {
+  const accountBtn = document.getElementById('accountBtn');
+  const favoritesContainer = document.getElementById('favoritesZones');
+  
+  if (user) {
+    const userId = user.uid;
+    
+    if (!user.isAnonymous) {
+      currentUser = user.displayName || user.email.split('@')[0];
+      accountBtn.innerHTML = `👤 ${currentUser}`;
+      isGuest = false;
+    } else {
+      accountBtn.innerHTML = '👤 guest';
+      currentUser = 'guest';
+      isGuest = true;
+    }
+    
+    database.ref('users/' + userId + '/favorites').on('value', (snapshot) => {
+      const favs = snapshot.val();
+      favorites = favs ? favs : [];
+      if (!favs) database.ref('users/' + userId + '/favorites').set([]);
+      displayZones(zones);
+      displayFavorites();
+      displayRecentlyPlayed();
+    });
+    
+    database.ref('users/' + userId + '/recent').on('value', (snapshot) => {
+      const recent = snapshot.val();
+      recentlyPlayed = recent ? recent : [];
+      if (!recent) database.ref('users/' + userId + '/recent').set([]);
+      displayRecentlyPlayed();
+    });
+    
+    if (favoritesContainer) {
+      const emptyDiv = favoritesContainer.querySelector('.empty-favorites');
+      if (emptyDiv) emptyDiv.innerHTML = user.isAnonymous ? '✨ sign in to star games and see them here' : '✨ star games to see them here';
+    }
+    
+  } else {
+    accountBtn.innerHTML = '✨ sign in';
+    currentUser = null;
+    isGuest = false;
+    favorites = [];
+    recentlyPlayed = [];
+    
+    displayZones(zones);
+    displayFavorites();
+    displayRecentlyPlayed();
+    
+    if (favoritesContainer) {
+      const emptyDiv = favoritesContainer.querySelector('.empty-favorites');
+      if (emptyDiv) emptyDiv.innerHTML = '✨ sign in to star games and see them here';
+    }
+  }
+  
+  updateLockFilterVisibility();
+  updateViewerButtons();
+  if (zones.length > 0) displayZones(zones);
+});
+
+function addToRecentlyPlayed(gameId) {
+  if (!auth.currentUser) return;
+  const userId = auth.currentUser.uid;
+  const updatedRecent = recentlyPlayed.filter(id => id !== gameId);
+  updatedRecent.unshift(gameId);
+  const maxRecent = parseInt(document.getElementById('maxRecent')?.value || '10');
+  if (updatedRecent.length > maxRecent) updatedRecent.length = maxRecent;
+  database.ref('users/' + userId + '/recent').set(updatedRecent);
+}
+
+window.clearRecentHistory = function() {
+  if (!auth.currentUser) return;
+  database.ref('users/' + auth.currentUser.uid + '/recent').set([]);
+  showToast('🕒 recent history cleared');
+};
+
+window.updateMaxRecent = function() {
+  const maxRecent = parseInt(document.getElementById('maxRecent').value);
+  if (recentlyPlayed.length > maxRecent) {
+    const updatedRecent = recentlyPlayed.slice(0, maxRecent);
+    database.ref('users/' + auth.currentUser.uid + '/recent').set(updatedRecent);
+  }
+  showToast(`🕒 showing last ${maxRecent} games`);
+};
+
+function displayRecentlyPlayed() {
+  const container = document.getElementById('recentZones');
+  const recentGames = recentlyPlayed.map(id => zones.find(z => z.id === id)).filter(g => g);
+  document.getElementById('recentCount').innerText = recentGames.length;
+  if (recentGames.length === 0) {
+    container.innerHTML = '<div class="empty-recent">🎮 play some games to see them here</div>';
+  } else {
+    container.innerHTML = '';
+    recentGames.forEach(file => container.appendChild(createZoneCard(file)));
+  }
+}
+
+window.toggleFavorite = function(gameId, event) {
+  event.stopPropagation();
+  
+  if (!auth.currentUser || auth.currentUser.isAnonymous) {
+    showToast('🔒 Sign in to favorite games');
+    showSmartAccountModal();
+    return;
+  }
+  
+  const index = favorites.indexOf(gameId);
+  let newFavorites;
+  
+  if (index === -1) {
+    newFavorites = [...favorites, gameId];
+    showToast('⭐ added to favorites');
+  } else {
+    newFavorites = favorites.filter(id => id !== gameId);
+    showToast('☆ removed from favorites');
+  }
+  
+  database.ref('users/' + auth.currentUser.uid + '/favorites').set(newFavorites)
+    .then(() => {
+      const star = event.target;
+      star.classList.toggle('active', newFavorites.includes(gameId));
+      if (index === -1) {
+        star.style.animation = 'starPulse 0.5s';
+        setTimeout(() => star.style.animation = '', 500);
+      }
+    })
+    .catch(error => showToast('❌ Failed to save favorite'));
+};
+
+function displayFavorites() {
+  const container = document.getElementById('favoritesZones');
+  const favoriteGames = zones.filter(z => favorites.includes(z.id));
+  document.getElementById('favoritesCount').innerText = favoriteGames.length;
+  if (favoriteGames.length === 0) {
+    const message = isGuest || !auth.currentUser ? 
+      '<div class="empty-favorites">✨ sign in to star games and see them here</div>' : 
+      '<div class="empty-favorites">✨ star games to see them here</div>';
+    container.innerHTML = message;
+  } else {
+    container.innerHTML = '';
+    favoriteGames.forEach(file => container.appendChild(createZoneCard(file)));
+  }
+}
+
+window.filterFavorites = function() {
+  showFavOnly = document.getElementById('showFavOnly').checked;
+  if (showFavOnly) {
+    displayZones(zones.filter(z => favorites.includes(z.id)));
+  } else {
+    displayZones(zones);
+  }
+};
+
+async function listZones() {
+  try {
+    const response = await fetch("https://cdn.jsdelivr.net/gh/gn-math/assets/zones.json?t=" + Date.now());
+    const json = await response.json();
+    zones = json.filter(game => !bannedIds.includes(game.id));
+    
+    // Randomly select 50% for unlocked in guest mode
+    const shuffled = [...zones].sort(() => 0.5 - Math.random());
+    unlockedGames = shuffled.slice(0, Math.floor(zones.length / 2)).map(g => g.id);
+    
+    document.getElementById('totalGamesStat').innerText = zones.length;
+    sortZones();
+  } catch (error) {
+    document.getElementById('container').innerHTML = `error loading games`;
+  }
+}
+
+window.sortZones = function() {
+  const by = document.getElementById('sortOptions').value;
+  if (by === 'name') zones.sort((a, b) => a.name.localeCompare(b.name));
+  else if (by === 'id') zones.sort((a, b) => a.id - b.id);
+  
+  displayFavorites();
+  displayRecentlyPlayed();
+  
+  if (showFavOnly) {
+    displayZones(zones.filter(z => favorites.includes(z.id)));
+  } else {
+    displayZones(zones);
+  }
+};
+
+function displayZones(list) {
+  const container = document.getElementById('container');
+  container.innerHTML = "";
+  
+  // Apply lock filtering based on user state
+  let displayList = list;
+  const user = auth.currentUser;
+  
+  if (!user) {
+    // Not signed in: all locked
+    displayList = list.map(game => ({ ...game, forcedLock: true }));
+  } else if (user.isAnonymous) {
+    // Guest: filter based on lockFilter
+    displayList = list.filter(game => {
+      const isUnlocked = unlockedGames.includes(game.id);
+      return lockFilter === 'unlocked' ? isUnlocked : !isUnlocked;
+    }).map(game => ({ 
+      ...game, 
+      forcedLock: lockFilter === 'locked' ? true : (unlockedGames.includes(game.id) ? false : true)
+    }));
+  } else {
+    // Signed in: all unlocked
+    displayList = list.map(game => ({ ...game, forcedLock: false }));
+  }
+  
+  displayList.forEach(file => container.appendChild(createZoneCard(file)));
+  document.getElementById('allCount').innerText = displayList.length;
+}
+
+function createZoneCard(file) {
+  const div = document.createElement('div');
+  div.className = 'zone-item';
+  
+  const user = auth.currentUser;
+  const isSignedIn = user && !user.isAnonymous;
+  
+  // Determine if game is locked
+  let isLocked = false;
+  let lockMessage = '';
+  
+  if (!user) {
+    isLocked = true;
+    lockMessage = '🔒 You need to sign up to unlock games, it\'s free.';
+  } else if (user.isAnonymous) {
+    isLocked = file.forcedLock !== undefined ? file.forcedLock : !unlockedGames.includes(file.id);
+    lockMessage = '🔒 You need to create an account to unlock the full experience, it\'s free.';
+  }
+  
+  if (isLocked) div.classList.add('locked');
+  
+  div.onclick = () => {
+    if (isLocked) {
+      showToast(lockMessage);
+      showSmartAccountModal();
+    } else {
+      openZone(file);
+    }
+  };
+  
+  const mediaDiv = document.createElement('div');
+  mediaDiv.className = 'zone-media';
+  
+  const img = document.createElement('img');
+  let coverSrc = file.cover?.replace("{COVER_URL}", coverURL).replace("{HTML_URL}", htmlURL) || coverURL + "/default.png";
+  img.src = coverSrc;
+  img.alt = file.name;
+  img.loading = 'lazy';
+  mediaDiv.appendChild(img);
+  
+  if (isLocked) {
+    const lockedOverlay = document.createElement('div');
+    lockedOverlay.className = 'locked-overlay';
+    lockedOverlay.innerHTML = `
+      <div class="lock-icon">🔒</div>
+      <div class="locked-message">
+        <p>${lockMessage}</p>
+        <button class="signup-prompt" onclick="event.stopPropagation(); showSignup();">✨ Sign Up Free</button>
+      </div>
+    `;
+    mediaDiv.appendChild(lockedOverlay);
+  }
+  
+  const overlay = document.createElement('div');
+  overlay.className = 'zone-overlay';
+  overlay.innerText = isLocked ? 'LOCKED' : 'PLAY';
+  mediaDiv.appendChild(overlay);
+  
+  const contentDiv = document.createElement('div');
+  contentDiv.className = 'zone-content';
+  
+  const titleContainer = document.createElement('div');
+  titleContainer.className = 'zone-title-container';
+  
+  const star = document.createElement('span');
+  const canFavorite = isSignedIn;
+  const isFavorited = favorites.includes(file.id);
+  
+  star.className = 'favorite-star' + (isFavorited ? ' active' : '') + (!canFavorite ? ' guest-disabled' : '');
+  star.innerHTML = '★';
+  star.onclick = (e) => {
+    e.stopPropagation();
+    if (!canFavorite) {
+      showToast('🔒 Sign in to favorite games');
+      showSmartAccountModal();
+    } else {
+      toggleFavorite(file.id, e);
+    }
+  };
+  
+  if (!canFavorite) star.title = 'Sign in to favorite games';
+  
+  titleContainer.appendChild(star);
+  
+  const nameSpan = document.createElement('div');
+  nameSpan.className = 'zone-name';
+  nameSpan.innerText = file.name;
+  titleContainer.appendChild(nameSpan);
+  
+  const metaDiv = document.createElement('div');
+  metaDiv.className = 'zone-meta';
+  
+  const authorSpan = document.createElement('span');
+  authorSpan.className = 'zone-author';
+  authorSpan.innerText = file.author || 'unknown';
+  metaDiv.appendChild(authorSpan);
+  
+  contentDiv.appendChild(titleContainer);
+  contentDiv.appendChild(metaDiv);
+  
+  const playBtn = document.createElement('button');
+  playBtn.innerText = isLocked ? 'sign up to play' : 'launch';
+  playBtn.onclick = (e) => { 
+    e.stopPropagation(); 
+    if (isLocked) {
+      showToast(lockMessage);
+      showSmartAccountModal();
+    } else {
+      openZone(file);
+    }
+  };
+  
+  div.appendChild(mediaDiv);
+  div.appendChild(contentDiv);
+  div.appendChild(playBtn);
+  return div;
+}
+
+window.filterZones = debounce(function() {
+  const q = document.getElementById('searchBar').value.toLowerCase();
+  const filtered = zones.filter(z => z.name.toLowerCase().includes(q));
+  if (showFavOnly) {
+    displayZones(filtered.filter(z => favorites.includes(z.id)));
+  } else {
+    displayZones(filtered);
+  }
+}, 150);
+
+window.openZone = function(file) {
+  if (!auth.currentUser) {
+    showToast('❌ Please sign in to play games');
+    showSmartAccountModal();
+    return;
+  }
+  
+  addToRecentlyPlayed(file.id);
+  
+  if (file.url.startsWith("http") && !file.url.includes("{HTML_URL}")) {
+    window.open(file.url, "_blank");
+  } else {
+    const url = file.url.replace("{COVER_URL}", coverURL).replace("{HTML_URL}", htmlURL);
+    fetch(url + "?t=" + Date.now()).then(r => r.text()).then(html => {
+      const frame = document.getElementById('zoneFrame');
+      frame.srcdoc = html;
+      document.getElementById('zoneName').textContent = file.name;
+      document.getElementById('zoneAuthor').textContent = "by " + (file.author || 'unknown');
+      if (file.authorLink) document.getElementById('zoneAuthor').href = file.authorLink;
+      document.getElementById('zoneViewer').style.display = "flex";
+      updateViewerButtons();
+    }).catch(e => showToast('error loading game'));
+  }
+};
+
+window.closeZone = function() {
+  document.getElementById('zoneViewer').style.display = "none";
+  document.getElementById('zoneFrame').srcdoc = '';
+};
+
+window.aboutBlank = function() {
+  const frame = document.getElementById('zoneFrame');
+  const w = window.open("about:blank", "_blank");
+  if (w) { w.document.write(frame.srcdoc); w.document.close(); }
+};
+
+document.getElementById('settingsBtn').addEventListener('click', () => {
+  document.getElementById('settingsPanel').classList.add('active');
+});
+
+document.getElementById('closeSettings').addEventListener('click', () => {
+  document.getElementById('settingsPanel').classList.remove('active');
+});
+
+window.toggleTheme = function() {
+  document.body.classList.toggle('light-theme');
+  const toggle = document.getElementById('themeToggle');
+  toggle.classList.toggle('active');
+  localStorage.setItem('ph_theme', document.body.classList.contains('light-theme') ? 'light' : 'dark');
+};
+
+if (localStorage.getItem('ph_theme') === 'light') {
+  document.body.classList.add('light-theme');
+  document.getElementById('themeToggle').classList.add('active');
+}
+
+window.cloakPreset = function(title, iconUrl) {
+  document.title = title;
+  let link = document.querySelector("link[rel~='icon']") || document.createElement('link');
+  link.rel = 'icon';
+  link.href = iconUrl;
+  document.head.appendChild(link);
+  showToast(`cloaked as ${title}`);
+  document.getElementById('settingsPanel').classList.remove('active');
+};
+
+window.applyCustomCloak = function() {
+  const title = document.getElementById('customTitle').value;
+  const icon = document.getElementById('customIcon').value;
+  if (title) document.title = title;
+  if (icon) {
+    let link = document.querySelector("link[rel~='icon']") || document.createElement('link');
+    link.rel = 'icon';
+    link.href = icon;
+    document.head.appendChild(link);
+  }
+  showToast('custom cloak applied');
+  document.getElementById('settingsPanel').classList.remove('active');
+};
+
+document.getElementById('heroCard').addEventListener('mousemove', (e) => {
+  const rect = e.currentTarget.getBoundingClientRect();
+  const x = ((e.clientX - rect.left) / rect.width) * 100;
+  const y = ((e.clientY - rect.top) / rect.height) * 100;
+  e.currentTarget.style.setProperty('--x', x + '%');
+  e.currentTarget.style.setProperty('--y', y + '%');
+});
+
+window.addEventListener('click', (e) => {
+  if (e.target.classList.contains('account-modal')) {
+    e.target.classList.remove('active');
+    setTimeout(() => e.target.style.display = 'none', 300);
+  }
+});
+
+listZones();
+console.log('loaded: lock system with guest filter');
+</script>
+</body>
+</html>
